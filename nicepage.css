@@ -42570,7 +42570,7 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 .u-header .u-sheet-1 {
-  min-height: 164px;
+  min-height: 165px;
 }
 
 .u-header .u-menu-1 {
@@ -42591,7 +42591,7 @@ a.u-link.u-text-hover-grey-90:hover {
 .u-header .u-image-1 {
   width: 400px;
   height: 73px;
-  margin: 46px auto 46px -400px;
+  margin: 46px auto 46px 0;
 }
 @media (max-width: 1199px) {
   .u-header .u-sheet-1 {
@@ -42608,7 +42608,6 @@ a.u-link.u-text-hover-grey-90:hover {
     height: 67px;
     margin-top: 26px;
     margin-bottom: 26px;
-    margin-left: 0;
   }
 }
 @media (max-width: 991px) {
@@ -42644,13 +42643,12 @@ a.u-link.u-text-hover-grey-90:hover {
   }
 
   .u-header .u-menu-1 {
-    margin-top: -50px;
-    margin-bottom: 0;
+    margin-bottom: 49px;
   }
 
   .u-header .u-image-1 {
-    margin-top: 54px;
-    margin-bottom: 36px;
+    margin-top: 46px;
+    margin-bottom: 46px;
   }
 }
  .u-footer {
@@ -42684,3 +42682,60 @@ a.u-link.u-text-hover-grey-90:hover {
  /*begin-variables base-font-size*/ 
  html { font-size: 16px; }
  /*end-variables base-font-size*/
+
+
+.submit_button{
+  /*display: inline-block;*/
+  display: table;
+  /*TODO maye need another solution for negative marin*/
+  cursor: pointer;
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  text-decoration: none;
+  border: 0 none transparent;
+  outline-width: 0;
+  background-color: transparent;
+  margin: 0;
+  -webkit-text-decoration-skip: objects;
+  font-style: initial;
+  white-space: nowrap;
+  -webkit-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  vertical-align: middle;
+  text-align: center;
+  padding: 10px 30px;
+  border-radius: 0;
+  --border-radius: 0;
+  align-self: flex-start;
+}
+.submit_button:focus,
+.submit_button:active:focus,
+.submit_button.active:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.submit_button:hover,
+.submit_button:focus {
+  text-decoration: none;
+}
+
+.submit_button:active,
+.submit_button.active {
+  outline: 0;
+  background-image: none;
+}
+.submit_button.disabled,
+.submit_button[disabled] {
+  opacity: 0.6;
+}
+.submit_button-circle {
+  border-radius: 50%;
+}
